@@ -55,7 +55,7 @@
                                 </state>
                                 <connections>
                                     <action selector="loginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2W0-Tn-9iu"/>
-                                    <segue destination="5x6-EW-Rwg" kind="show" id="p3s-cE-mIY"/>
+                                    <segue destination="Io7-xo-X3B" kind="show" id="fls-b9-JAC"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -192,15 +192,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTF-8v-hVa">
-                                <rect key="frame" x="63" y="497" width="286" height="48"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BeF-37-GMB">
+                                <rect key="frame" x="101" y="475" width="211" height="81"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Enter">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
+                                <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="ZipCodeButton:" destination="Io7-xo-X3B" eventType="touchUpInside" id="14G-kz-V8W"/>
+                                    <segue destination="5x6-EW-Rwg" kind="show" id="hhR-2L-f4d"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -215,7 +213,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QNq-Bw-wrR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1182" y="-671"/>
+            <point key="canvasLocation" x="1181.1594202898552" y="-671.73913043478262"/>
         </scene>
         <!--Chat View Controller-->
         <scene sceneID="I93-ws-pxu">
@@ -254,7 +252,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WiB-Pp-lvr">
-                                        <rect key="frame" x="315" y="0.0" width="99" height="50"/>
+                                        <rect key="frame" x="315" y="0.0" width="91" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Send"/>
                                         <connections>
@@ -265,6 +263,7 @@
                                 <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="0CZ-IB-9He"/>
+                                    <constraint firstAttribute="trailing" secondItem="WiB-Pp-lvr" secondAttribute="trailing" id="7hN-rK-pZa"/>
                                     <constraint firstAttribute="bottom" secondItem="WiB-Pp-lvr" secondAttribute="bottom" id="EXU-ER-MLd"/>
                                     <constraint firstAttribute="trailing" secondItem="WiB-Pp-lvr" secondAttribute="trailing" id="rmu-Wl-qO4"/>
                                     <constraint firstItem="WiB-Pp-lvr" firstAttribute="top" secondItem="ZZd-4f-25Q" secondAttribute="top" id="yam-Dt-JQ7"/>
@@ -311,6 +310,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="fls-b9-JAC"/>
         <segue reference="B6D-Bv-f17"/>
     </inferredMetricsTieBreakers>
 </document>
