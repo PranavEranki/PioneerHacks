@@ -16,22 +16,22 @@ class ExpertiseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        func ZipCodeButton(_ sender: UIButton) {
-
-            
-            let zip1: String = ZipCode1.text!
-            let zip2: String = ZipCode2.text!
-            let zip3: String = ZipCode3.text!
-            
-            if ((zip1.count == 5) && (zip2.count == 5 || zip2.count == 0) && (zip3.count == 5 || zip3.count == 0)) {
-                navigationController?.pushViewController(ChatViewController(), animated: true)
-            }
-        }
         
 
         // Do any additional setup after loading the view.
     }
 
+    func ZipCodeButton(_ sender: UIButton) {
+        
+        
+        let zip1: String = ZipCode1.text!
+        let zip2: String = ZipCode2.text!
+        let zip3: String = ZipCode3.text!
+        
+        if ((zip1.count == 5) && (zip2.count == 5 || zip2.count == 0) && (zip3.count == 5 || zip3.count == 0)) {
+            navigationController?.pushViewController(ChatViewController(), animated: true)
+        }
+    }
     
 
 }

@@ -20,10 +20,8 @@ class ChatViewController: UIViewController, UITextFieldDelegate, UITableViewDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        retrieveMessages()
     }
-    
-    
     
     @IBAction func sendMessage(_ sender: UIButton) {
         print("\(String(describing: Auth.auth().currentUser?.uid))")
@@ -38,9 +36,24 @@ class ChatViewController: UIViewController, UITextFieldDelegate, UITableViewDele
             }
             else {
                 print("Message saved")
+                self.inputTextField.text = ""
                 self.messageArray.append(self.inputTextField.text!)
-                self.tableView.reloadData()
+                self.retrieveMessages()
             }
+        }
+        
+    }
+    func retrieveMessages() {
+        let ref = Database.database().reference().child("messages")
+        ref.observe(.childAdded) { (snapshot) in
+            let value = snapshot.value as! Dictionary<String, String>
+            let text = value["text"]!
+            //let sender = value["email"]
+            
+            self.messageArray.append(text)
+            self.tableView.reloadData()
+            
+            
         }
     }
     

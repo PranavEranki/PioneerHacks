@@ -7,15 +7,15 @@
 //
 
 import UIKit
-import GooglePlaces
-import GoogleMaps
+//import GooglePlaces
+//import GoogleMaps
 class ViewControllerGoogleMapsPremierIntegration: UIViewController {
     
-    var locationManager = CLLocationManager()
-    var currentLocation: CLLocation?
-    var mapView: GMSMapView!
-    var placesClient: GMSPlacesClient!
-    var zoomLevel: Float = 15.0
+//    var locationManager = CLLocationManager()
+//    var currentLocation: CLLocation?
+//    var mapView: GMSMapView!
+//    var placesClient: GMSPlacesClient!
+//    var zoomLevel: Float = 15.0
     override func viewDidLoad() {
         super.viewDidLoad()
 
