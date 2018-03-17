@@ -69,11 +69,21 @@ class ChatViewController: UICollectionViewController {
     }()
     
     @objc func send() {
+        print("\(String(describing: Auth.auth().currentUser?.uid))")
         let ref = Database.database().reference().child("messages")
-        let childRef = ref.childByAutoId()
+        let user = Auth.auth().currentUser?.email
         
-        let values = ["text": inputTextField.text!]
-        ref.updateChildValues(values)
+        let values = ["text": inputTextField.text!, "email": user]
+        ref.childByAutoId().setValue(values) {
+            (error, reference) in
+            if error != nil {
+                print(error!)
+            }
+            else {
+                print("Message saved")
+                
+            }
+        }
         
     }
     
