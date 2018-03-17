@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C2E300A205DCEA800B02649 /* ViewControllerGoogleMapsPremierIntegration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2E3009205DCEA800B02649 /* ViewControllerGoogleMapsPremierIntegration.swift */; };
 		700479E1205CC93E00C092D3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 700479E0205CC93E00C092D3 /* GoogleService-Info.plist */; };
 		700479E4205CCDFB00C092D3 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700479E2205CCDFB00C092D3 /* ChatViewController.swift */; };
 		700479E5205CCDFB00C092D3 /* ChatTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 700479E3205CCDFB00C092D3 /* ChatTableViewController.xib */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C2E3009205DCEA800B02649 /* ViewControllerGoogleMapsPremierIntegration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerGoogleMapsPremierIntegration.swift; sourceTree = "<group>"; };
 		50480FD2629FEEC6CA724BF5 /* Pods_PioneerHacksProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PioneerHacksProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		700479E0205CC93E00C092D3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		700479E2205CCDFB00C092D3 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 			children = (
 				70C0A7652059E49A003B68B7 /* AppDelegate.swift */,
 				70C0A7672059E49A003B68B7 /* LoginViewController.swift */,
+				1C2E3009205DCEA800B02649 /* ViewControllerGoogleMapsPremierIntegration.swift */,
 				7010B0D4205CC6BA00211122 /* SignUpViewController.swift */,
 				700479E2205CCDFB00C092D3 /* ChatViewController.swift */,
 				819261F9205DBE8D003E4501 /* ExpertiseViewController.swift */,
@@ -245,6 +248,7 @@
 			files = (
 				70C0A76E2059E49A003B68B7 /* PioneerHacksProject.xcdatamodeld in Sources */,
 				70C0A7682059E49A003B68B7 /* LoginViewController.swift in Sources */,
+				1C2E300A205DCEA800B02649 /* ViewControllerGoogleMapsPremierIntegration.swift in Sources */,
 				7010B0D5205CC6BA00211122 /* SignUpViewController.swift in Sources */,
 				70C0A7662059E49A003B68B7 /* AppDelegate.swift in Sources */,
 				819261FA205DBE8D003E4501 /* ExpertiseViewController.swift in Sources */,
