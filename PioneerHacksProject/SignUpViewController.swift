@@ -30,7 +30,7 @@ class SignUpViewController: UIViewController {
                 let value = ["Email": self.emailText.text!]
                 ref.child("Users").child(user!.uid).setValue(value)
                 let vc = ExpertiseViewController()
-                self.navigationController?.pushViewController(vc, animated: true)
+                //self.navigationController?.pushViewController(vc, animated: true)
             }
         }
     }
