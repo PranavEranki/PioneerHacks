@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FirebaseAuth
+import FirebaseDatabase
 
 class ChatViewController: UICollectionViewController {
         
@@ -22,7 +24,7 @@ class ChatViewController: UICollectionViewController {
     func setUpInput() {
         let containerView = UIView()
         containerView.translatesAutoresizingMaskIntoConstraints = false
-        containerView.backgroundColor = UIColor.black
+        containerView.backgroundColor = UIColor.white
         view.addSubview(containerView)
         
         containerView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
@@ -32,6 +34,7 @@ class ChatViewController: UICollectionViewController {
         
         let sendButton = UIButton(type: .system)
         sendButton.setTitle("Send", for: .normal)
+        sendButton.addTarget(self, action: #selector(send), for: .touchUpInside)
         sendButton.translatesAutoresizingMaskIntoConstraints = false
         containerView.addSubview(sendButton)
         
@@ -40,15 +43,38 @@ class ChatViewController: UICollectionViewController {
         sendButton.widthAnchor.constraint(equalToConstant: 80).isActive = true
         sendButton.heightAnchor.constraint(equalTo: containerView.heightAnchor).isActive = true
         
-        let inputTextField = UITextField()
-        inputTextField.placeholder = "Enter message..."
-        inputTextField.translatesAutoresizingMaskIntoConstraints = false
         containerView.addSubview(inputTextField)
         
         inputTextField.leftAnchor.constraint(equalTo: containerView.leftAnchor, constant: 8).isActive = true
         inputTextField.centerYAnchor.constraint(equalTo: containerView.centerYAnchor).isActive = true
         inputTextField.rightAnchor.constraint(equalTo: sendButton.leftAnchor).isActive = true
         inputTextField.heightAnchor.constraint(equalTo: containerView.heightAnchor).isActive = true
+        
+        let seperator = UIView()
+        seperator.backgroundColor = UIColor.darkGray
+        seperator.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(seperator)
+        
+        seperator.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        seperator.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        seperator.bottomAnchor.constraint(equalTo: containerView.topAnchor).isActive = true
+        seperator.heightAnchor.constraint(equalToConstant: 1).isActive = true
+    }
+    
+    let inputTextField: UITextField = {
+        let i = UITextField()
+        i.placeholder = "Enter message..."
+        i.translatesAutoresizingMaskIntoConstraints = false
+        return i
+    }()
+    
+    @objc func send() {
+        let ref = Database.database().reference().child("messages")
+        let childRef = ref.childByAutoId()
+        
+        let values = ["text": inputTextField.text!]
+        ref.updateChildValues(values)
+        
     }
     
 }
