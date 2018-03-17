@@ -27,10 +27,10 @@ class SignUpViewController: UIViewController {
             }
             else {
                 let ref = Database.database().reference()
-                let value = ["Email": self.emailText.text!]
+                let value = ["Email": self.emailText.text!, "Password": self.passwordText.text!]
                 ref.child("Users").child(user!.uid).setValue(value)
-                let vc = ChatViewController(collectionViewLayout: UICollectionViewFlowLayout())
-                self.navigationController?.pushViewController(vc, animated: true)
+                //let vc = ChatViewController()
+                //self.navigationController?.pushViewController(vc, animated: true)
             }
         }
     }

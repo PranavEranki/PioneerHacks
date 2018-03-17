@@ -25,8 +25,8 @@ class LoginViewController: UIViewController {
                 print(err!)
             }
             else {
-                let vc = ChatViewController(collectionViewLayout: UICollectionViewFlowLayout())
-                self.navigationController?.pushViewController(vc, animated: true)
+                //let vc = ChatViewController()
+                //self.navigationController?.pushViewController(vc, animated: true)
             }
             }
     }

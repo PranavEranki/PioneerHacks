@@ -10,13 +10,14 @@ import UIKit
 import FirebaseAuth
 import FirebaseDatabase
 
-class ChatViewController: UICollectionViewController {
-        
+class ChatViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource {
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    var messageArray = ["hi", "lol", "weed", "hello", "hi", "lol", "weed", "hello"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        collectionView?.backgroundColor = UIColor.white
-        
         setUpInput()
         
     }
@@ -58,16 +59,18 @@ class ChatViewController: UICollectionViewController {
         seperator.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         seperator.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         seperator.bottomAnchor.constraint(equalTo: containerView.topAnchor).isActive = true
-        seperator.heightAnchor.constraint(equalToConstant: 1).isActive = true
+        seperator.heightAnchor.constraint(equalToConstant: 1).isActive = true   
     }
     
-    let inputTextField: UITextField = {
+    lazy var inputTextField: UITextField = {
         let i = UITextField()
         i.placeholder = "Enter message..."
+        i.delegate = self
         i.translatesAutoresizingMaskIntoConstraints = false
         return i
     }()
     
+  
     @objc func send() {
         print("\(String(describing: Auth.auth().currentUser?.uid))")
         let ref = Database.database().reference().child("messages")
@@ -81,10 +84,22 @@ class ChatViewController: UICollectionViewController {
             }
             else {
                 print("Message saved")
-                
             }
         }
-        
     }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return messageArray.count
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
+        cell.textLabel?.text = messageArray[indexPath.row]
+        return cell
+    }
+    
+    
+    
+    
+    
     
 }
