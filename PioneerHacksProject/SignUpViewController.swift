@@ -29,7 +29,7 @@ class SignUpViewController: UIViewController {
                 let ref = Database.database().reference()
                 let value = ["Email": self.emailText.text!]
                 ref.child("Users").child(user!.uid).setValue(value)
-                let vc = ChatViewController(collectionViewLayout: UICollectionViewFlowLayout())
+                let vc = ExpertiseViewController()
                 self.navigationController?.pushViewController(vc, animated: true)
             }
         }

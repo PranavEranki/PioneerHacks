@@ -17,6 +17,7 @@
 		70C0A76E2059E49A003B68B7 /* PioneerHacksProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 70C0A76C2059E49A003B68B7 /* PioneerHacksProject.xcdatamodeld */; };
 		70C0A7702059E49A003B68B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70C0A76F2059E49A003B68B7 /* Assets.xcassets */; };
 		70C0A7732059E49A003B68B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70C0A7712059E49A003B68B7 /* LaunchScreen.storyboard */; };
+		819261FA205DBE8D003E4501 /* ExpertiseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819261F9205DBE8D003E4501 /* ExpertiseViewController.swift */; };
 		9699F4ADBC6340CB57D6EF35 /* Pods_PioneerHacksProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50480FD2629FEEC6CA724BF5 /* Pods_PioneerHacksProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		70C0A7722059E49A003B68B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70C0A7742059E49A003B68B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7728BE87D184E686AE1323D2 /* Pods-PioneerHacksProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PioneerHacksProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-PioneerHacksProject/Pods-PioneerHacksProject.release.xcconfig"; sourceTree = "<group>"; };
+		819261F9205DBE8D003E4501 /* ExpertiseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExpertiseViewController.swift; path = ../ExpertiseViewController.swift; sourceTree = "<group>"; };
 		DA3572C7AE686DF16D0848F2 /* Pods-PioneerHacksProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PioneerHacksProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PioneerHacksProject/Pods-PioneerHacksProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +94,7 @@
 				70C0A7672059E49A003B68B7 /* LoginViewController.swift */,
 				7010B0D4205CC6BA00211122 /* SignUpViewController.swift */,
 				700479E2205CCDFB00C092D3 /* ChatViewController.swift */,
+				819261F9205DBE8D003E4501 /* ExpertiseViewController.swift */,
 				70C0A7692059E49A003B68B7 /* Main.storyboard */,
 				700479E3205CCDFB00C092D3 /* ChatTableViewController.xib */,
 				70C0A76F2059E49A003B68B7 /* Assets.xcassets */,
@@ -244,6 +247,7 @@
 				70C0A7682059E49A003B68B7 /* LoginViewController.swift in Sources */,
 				7010B0D5205CC6BA00211122 /* SignUpViewController.swift in Sources */,
 				70C0A7662059E49A003B68B7 /* AppDelegate.swift in Sources */,
+				819261FA205DBE8D003E4501 /* ExpertiseViewController.swift in Sources */,
 				700479E4205CCDFB00C092D3 /* ChatViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
