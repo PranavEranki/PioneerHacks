@@ -148,10 +148,10 @@
             </objects>
             <point key="canvasLocation" x="1182" y="-671"/>
         </scene>
-        <!--Chat Table View Controller-->
+        <!--Chat View Controller-->
         <scene sceneID="I93-ws-pxu">
             <objects>
-                <viewController id="5x6-EW-Rwg" customClass="ChatTableViewController" customModule="PioneerHacksProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5x6-EW-Rwg" customClass="ChatViewController" customModule="PioneerHacksProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TBs-dw-ePk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -174,23 +174,54 @@
                                     <outlet property="delegate" destination="5x6-EW-Rwg" id="Ixg-CJ-ZdE"/>
                                 </connections>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZZd-4f-25Q">
+                                <rect key="frame" x="0.0" y="686" width="414" height="50"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zuI-R1-pWJ">
+                                        <rect key="frame" x="8" y="10" width="299" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WiB-Pp-lvr">
+                                        <rect key="frame" x="315" y="0.0" width="99" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Send"/>
+                                        <connections>
+                                            <action selector="sendMessage:" destination="5x6-EW-Rwg" eventType="touchUpInside" id="xf4-mB-plt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0CZ-IB-9He"/>
+                                    <constraint firstAttribute="bottom" secondItem="WiB-Pp-lvr" secondAttribute="bottom" id="EXU-ER-MLd"/>
+                                    <constraint firstAttribute="trailing" secondItem="WiB-Pp-lvr" secondAttribute="trailing" id="rmu-Wl-qO4"/>
+                                    <constraint firstItem="WiB-Pp-lvr" firstAttribute="top" secondItem="ZZd-4f-25Q" secondAttribute="top" id="yam-Dt-JQ7"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Zgt-xo-U4t" firstAttribute="trailing" secondItem="ZZd-4f-25Q" secondAttribute="trailing" id="GMy-RR-GJm"/>
                             <constraint firstItem="64u-48-dha" firstAttribute="leading" secondItem="Zgt-xo-U4t" secondAttribute="leading" id="I2L-PL-sa1"/>
                             <constraint firstItem="64u-48-dha" firstAttribute="trailing" secondItem="Zgt-xo-U4t" secondAttribute="trailing" id="Myp-by-YJl"/>
                             <constraint firstItem="Zgt-xo-U4t" firstAttribute="bottom" secondItem="64u-48-dha" secondAttribute="bottom" constant="50" id="Z6z-KG-1JI"/>
+                            <constraint firstItem="ZZd-4f-25Q" firstAttribute="leading" secondItem="Zgt-xo-U4t" secondAttribute="leading" id="hzN-q9-RGE"/>
                             <constraint firstItem="64u-48-dha" firstAttribute="top" secondItem="TBs-dw-ePk" secondAttribute="top" id="u6g-jk-miM"/>
+                            <constraint firstAttribute="bottom" secondItem="ZZd-4f-25Q" secondAttribute="bottom" id="ut6-2m-nrE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Zgt-xo-U4t"/>
                     </view>
                     <connections>
-                        <outlet property="tableView" destination="64u-48-dha" id="a97-Oh-L13"/>
+                        <outlet property="inputTextField" destination="zuI-R1-pWJ" id="V4s-fu-8dk"/>
+                        <outlet property="tableView" destination="64u-48-dha" id="j0H-g4-5XW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5sB-XL-OkU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1848" y="137"/>
+            <point key="canvasLocation" x="1847.826086956522" y="136.95652173913044"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nrl-Sl-jIR">
