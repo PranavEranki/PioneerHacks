@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseDatabase
 
 class SignUpViewController: UIViewController {
 
@@ -25,12 +26,17 @@ class SignUpViewController: UIViewController {
                 print(err!)
             }
             else {
-                print("success")
+                let ref = Database.database().reference()
+                let value = ["Email": self.emailText.text!]
+                ref.child("Users").child(user!.uid).setValue(value)
+                let vc = ChatViewController(collectionViewLayout: UICollectionViewFlowLayout())
+                self.navigationController?.pushViewController(vc, animated: true)
             }
         }
     }
+}
     
     
     
 
-}
+
