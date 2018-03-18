@@ -8,15 +8,29 @@
 
 import UIKit
 import FirebaseAuth
+import CoreLocation
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, CLLocationManagerDelegate {
 
+    let locationManager = CLLocationManager()
+    
+    
     @IBOutlet weak var emailText: UITextField!
     @IBOutlet weak var passwordText: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        locationManager.requestAlwaysAuthorization()
+        
+        //locationManager.requestWhenInUseAuthorization()
+        
+        if (CLLocationManager.locationServicesEnabled()) {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyBest
+            locationManager.startUpdatingLocation()
+        }
     }
 
     @IBAction func loginPressed(_ sender: UIButton) {
@@ -28,7 +42,7 @@ class LoginViewController: UIViewController {
                 //let vc = ChatViewController()
                 //self.navigationController?.pushViewController(vc, animated: true)
             }
-            }
+        }
     }
     
 }
