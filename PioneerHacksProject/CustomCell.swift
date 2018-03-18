@@ -9,13 +9,15 @@ import UIKit
 
 class CustomCell: UITableViewCell {
 
-    @IBOutlet weak var imageBackground: UIImageView!
-    @IBOutlet weak var messageBackground: UILabel!
+    @IBOutlet weak var userImage: UIImageView!
+    @IBOutlet weak var messageBackground: UIView!
+    @IBOutlet weak var senderName: UILabel!
     @IBOutlet weak var messageBody: UILabel!
-    @IBOutlet weak var senderUsername: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
     }
 
 
