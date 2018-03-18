@@ -15,7 +15,7 @@ class CustomCell: UITableViewCell {
     @IBOutlet weak var senderUsername: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        // Initialization code hi
     }
 
 
