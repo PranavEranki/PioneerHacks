@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //GMSServices.provideAPIKey("AIzaSyCISCYaW4cpyrT6nTwD40LkP3bNZIh1-Cs")
         //GMSPlacesClient.provideAPIKey("AIzaSyCISCYaW4cpyrT6nTwD40LkP3bNZIh1-Cs")
         
-        let location: UIApplicationLaunchOptionsKey
+        //let location: UIApplicationLaunchOptionsKey
         //print(location)
         
         return true

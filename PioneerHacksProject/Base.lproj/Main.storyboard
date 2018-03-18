@@ -55,7 +55,6 @@
                                 </state>
                                 <connections>
                                     <action selector="loginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2W0-Tn-9iu"/>
-                                    <segue destination="Io7-xo-X3B" kind="show" id="fls-b9-JAC"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -310,7 +309,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="fls-b9-JAC"/>
         <segue reference="B6D-Bv-f17"/>
     </inferredMetricsTieBreakers>
 </document>
