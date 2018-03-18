@@ -1,35 +1,37 @@
 //
 //  ExpertiseViewController.swift
-//  PioneerHacksProject
+//
 //
 //  Created by Anikait Mundhra on 3/17/18.
-//  Copyright © 2018 Mehul Tailang. All rights reserved.
 //
 
 import UIKit
 
 class ExpertiseViewController: UIViewController {
-
+    
+    @IBOutlet weak var ZipCode1: UITextField!
+    @IBOutlet weak var ZipCode2: UITextField!
+    @IBOutlet weak var ZipCode3: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func ZipCodeButton(_ sender: UIButton) {
+        
+        
+        let zip1: String = ZipCode1.text!
+        let zip2: String = ZipCode2.text!
+        let zip3: String = ZipCode3.text!
+        
+        if ((zip1.count == 5) && (zip2.count == 5 || zip2.count == 0) && (zip3.count == 5 || zip3.count == 0)) {
+            navigationController?.pushViewController(ChatViewController(), animated: true)
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
 }
+

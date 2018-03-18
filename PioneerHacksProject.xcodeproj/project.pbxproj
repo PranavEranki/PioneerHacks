@@ -7,28 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1C2E300A205DCEA800B02649 /* ViewControllerGoogleMapsPremierIntegration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2E3009205DCEA800B02649 /* ViewControllerGoogleMapsPremierIntegration.swift */; };
 		700479E1205CC93E00C092D3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 700479E0205CC93E00C092D3 /* GoogleService-Info.plist */; };
 		700479E4205CCDFB00C092D3 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700479E2205CCDFB00C092D3 /* ChatViewController.swift */; };
 		7010B0D5205CC6BA00211122 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B0D4205CC6BA00211122 /* SignUpViewController.swift */; };
+		70ADA8F8205DE5BB00ECD100 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70ADA8F7205DE5BB00ECD100 /* CustomCell.swift */; };
+		70ADA8FA205DE65000ECD100 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70ADA8F9205DE64F00ECD100 /* MessageCell.xib */; };
+		70ADA8FF205DE8E400ECD100 /* ExpertiseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70ADA8FE205DE8E400ECD100 /* ExpertiseViewController.swift */; };
 		70C0A7662059E49A003B68B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C0A7652059E49A003B68B7 /* AppDelegate.swift */; };
 		70C0A7682059E49A003B68B7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C0A7672059E49A003B68B7 /* LoginViewController.swift */; };
 		70C0A76B2059E49A003B68B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70C0A7692059E49A003B68B7 /* Main.storyboard */; };
 		70C0A76E2059E49A003B68B7 /* PioneerHacksProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 70C0A76C2059E49A003B68B7 /* PioneerHacksProject.xcdatamodeld */; };
 		70C0A7702059E49A003B68B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70C0A76F2059E49A003B68B7 /* Assets.xcassets */; };
 		70C0A7732059E49A003B68B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70C0A7712059E49A003B68B7 /* LaunchScreen.storyboard */; };
-		819261FA205DBE8D003E4501 /* ExpertiseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819261F9205DBE8D003E4501 /* ExpertiseViewController.swift */; };
-		81A37AF4205DDE3F00E8D404 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81A37AF3205DDE3F00E8D404 /* MessageCell.xib */; };
-		81A37AF8205DE12200E8D404 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A37AF7205DE12200E8D404 /* CustomCell.swift */; };
 		9699F4ADBC6340CB57D6EF35 /* Pods_PioneerHacksProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50480FD2629FEEC6CA724BF5 /* Pods_PioneerHacksProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1C2E3009205DCEA800B02649 /* ViewControllerGoogleMapsPremierIntegration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerGoogleMapsPremierIntegration.swift; sourceTree = "<group>"; };
 		50480FD2629FEEC6CA724BF5 /* Pods_PioneerHacksProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PioneerHacksProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		700479E0205CC93E00C092D3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		700479E2205CCDFB00C092D3 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		7010B0D4205CC6BA00211122 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		70ADA8F7205DE5BB00ECD100 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		70ADA8F9205DE64F00ECD100 /* MessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MessageCell.xib; path = "../../../../Tutorial-Projects/Flash-Chat-iOS11-master/Flash Chat/MessageCell.xib"; sourceTree = "<group>"; };
+		70ADA8FE205DE8E400ECD100 /* ExpertiseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExpertiseViewController.swift; path = "/Users/mehultailang/Desktop/Mehul/Projects/Hackathons/Pioneer-Hacks/PioneerHacksProject/PioneerHacksProject/ExpertiseViewController.swift"; sourceTree = "<absolute>"; };
 		70C0A7622059E49A003B68B7 /* PioneerHacksProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PioneerHacksProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70C0A7652059E49A003B68B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70C0A7672059E49A003B68B7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -38,9 +39,6 @@
 		70C0A7722059E49A003B68B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70C0A7742059E49A003B68B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7728BE87D184E686AE1323D2 /* Pods-PioneerHacksProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PioneerHacksProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-PioneerHacksProject/Pods-PioneerHacksProject.release.xcconfig"; sourceTree = "<group>"; };
-		819261F9205DBE8D003E4501 /* ExpertiseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExpertiseViewController.swift; path = ../ExpertiseViewController.swift; sourceTree = "<group>"; };
-		81A37AF3205DDE3F00E8D404 /* MessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MessageCell.xib; path = ../../../Downloads/MessageCell.xib; sourceTree = "<group>"; };
-		81A37AF7205DE12200E8D404 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomCell.swift; path = /Users/ani/Desktop/ProtectTheCommunes/PioneerHacksProject/CustomCell.swift; sourceTree = "<absolute>"; };
 		DA3572C7AE686DF16D0848F2 /* Pods-PioneerHacksProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PioneerHacksProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PioneerHacksProject/Pods-PioneerHacksProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,12 +94,11 @@
 			children = (
 				70C0A7652059E49A003B68B7 /* AppDelegate.swift */,
 				70C0A7672059E49A003B68B7 /* LoginViewController.swift */,
-				1C2E3009205DCEA800B02649 /* ViewControllerGoogleMapsPremierIntegration.swift */,
 				7010B0D4205CC6BA00211122 /* SignUpViewController.swift */,
 				700479E2205CCDFB00C092D3 /* ChatViewController.swift */,
-				819261F9205DBE8D003E4501 /* ExpertiseViewController.swift */,
-				81A37AF3205DDE3F00E8D404 /* MessageCell.xib */,
-				81A37AF7205DE12200E8D404 /* CustomCell.swift */,
+				70ADA8F9205DE64F00ECD100 /* MessageCell.xib */,
+				70ADA8FE205DE8E400ECD100 /* ExpertiseViewController.swift */,
+				70ADA8F7205DE5BB00ECD100 /* CustomCell.swift */,
 				70C0A7692059E49A003B68B7 /* Main.storyboard */,
 				70C0A76F2059E49A003B68B7 /* Assets.xcassets */,
 				70C0A7712059E49A003B68B7 /* LaunchScreen.storyboard */,
@@ -174,10 +171,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70ADA8FA205DE65000ECD100 /* MessageCell.xib in Resources */,
 				70C0A7732059E49A003B68B7 /* LaunchScreen.storyboard in Resources */,
 				700479E1205CC93E00C092D3 /* GoogleService-Info.plist in Resources */,
 				70C0A7702059E49A003B68B7 /* Assets.xcassets in Resources */,
-				81A37AF4205DDE3F00E8D404 /* MessageCell.xib in Resources */,
 				70C0A76B2059E49A003B68B7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,11 +248,10 @@
 			files = (
 				70C0A76E2059E49A003B68B7 /* PioneerHacksProject.xcdatamodeld in Sources */,
 				70C0A7682059E49A003B68B7 /* LoginViewController.swift in Sources */,
-				1C2E300A205DCEA800B02649 /* ViewControllerGoogleMapsPremierIntegration.swift in Sources */,
 				7010B0D5205CC6BA00211122 /* SignUpViewController.swift in Sources */,
 				70C0A7662059E49A003B68B7 /* AppDelegate.swift in Sources */,
-				819261FA205DBE8D003E4501 /* ExpertiseViewController.swift in Sources */,
-				81A37AF8205DE12200E8D404 /* CustomCell.swift in Sources */,
+				70ADA8FF205DE8E400ECD100 /* ExpertiseViewController.swift in Sources */,
+				70ADA8F8205DE5BB00ECD100 /* CustomCell.swift in Sources */,
 				700479E4205CCDFB00C092D3 /* ChatViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

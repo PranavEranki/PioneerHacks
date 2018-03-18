@@ -205,9 +205,9 @@
                         <viewLayoutGuide key="safeArea" id="lBw-q1-scU"/>
                     </view>
                     <connections>
-                        <outlet property="ZipCode1" destination="NAY-mr-zqm" id="RaI-OO-Zrz"/>
-                        <outlet property="ZipCode2" destination="lkG-ce-Rk4" id="xtA-SM-UBk"/>
-                        <outlet property="ZipCode3" destination="jAh-dt-mXa" id="NMP-RM-8RV"/>
+                        <outlet property="ZipCode1" destination="NAY-mr-zqm" id="xtW-wJ-UrP"/>
+                        <outlet property="ZipCode2" destination="lkG-ce-Rk4" id="YLf-KE-kF4"/>
+                        <outlet property="ZipCode3" destination="jAh-dt-mXa" id="Qlf-A6-Alq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QNq-Bw-wrR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -226,7 +226,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="686"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="Bsb-iv-pJy">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="messageCell" id="Bsb-iv-pJy">
                                         <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Bsb-iv-pJy" id="vwO-2h-UX4">
