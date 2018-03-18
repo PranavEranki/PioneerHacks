@@ -10,7 +10,6 @@
 		700479E1205CC93E00C092D3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 700479E0205CC93E00C092D3 /* GoogleService-Info.plist */; };
 		700479E4205CCDFB00C092D3 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700479E2205CCDFB00C092D3 /* ChatViewController.swift */; };
 		7010B0D5205CC6BA00211122 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B0D4205CC6BA00211122 /* SignUpViewController.swift */; };
-		70ADA8F8205DE5BB00ECD100 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70ADA8F7205DE5BB00ECD100 /* CustomCell.swift */; };
 		70ADA8FA205DE65000ECD100 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70ADA8F9205DE64F00ECD100 /* MessageCell.xib */; };
 		70ADA8FF205DE8E400ECD100 /* ExpertiseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70ADA8FE205DE8E400ECD100 /* ExpertiseViewController.swift */; };
 		70C0A7662059E49A003B68B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C0A7652059E49A003B68B7 /* AppDelegate.swift */; };
@@ -27,7 +26,6 @@
 		700479E0205CC93E00C092D3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		700479E2205CCDFB00C092D3 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		7010B0D4205CC6BA00211122 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		70ADA8F7205DE5BB00ECD100 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		70ADA8F9205DE64F00ECD100 /* MessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MessageCell.xib; path = "../../../../Tutorial-Projects/Flash-Chat-iOS11-master/Flash Chat/MessageCell.xib"; sourceTree = "<group>"; };
 		70ADA8FE205DE8E400ECD100 /* ExpertiseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExpertiseViewController.swift; path = "/Users/mehultailang/Desktop/Mehul/Projects/Hackathons/Pioneer-Hacks/PioneerHacksProject/PioneerHacksProject/ExpertiseViewController.swift"; sourceTree = "<absolute>"; };
 		70C0A7622059E49A003B68B7 /* PioneerHacksProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PioneerHacksProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,7 +96,6 @@
 				700479E2205CCDFB00C092D3 /* ChatViewController.swift */,
 				70ADA8F9205DE64F00ECD100 /* MessageCell.xib */,
 				70ADA8FE205DE8E400ECD100 /* ExpertiseViewController.swift */,
-				70ADA8F7205DE5BB00ECD100 /* CustomCell.swift */,
 				70C0A7692059E49A003B68B7 /* Main.storyboard */,
 				70C0A76F2059E49A003B68B7 /* Assets.xcassets */,
 				70C0A7712059E49A003B68B7 /* LaunchScreen.storyboard */,
@@ -251,7 +248,6 @@
 				7010B0D5205CC6BA00211122 /* SignUpViewController.swift in Sources */,
 				70C0A7662059E49A003B68B7 /* AppDelegate.swift in Sources */,
 				70ADA8FF205DE8E400ECD100 /* ExpertiseViewController.swift in Sources */,
-				70ADA8F8205DE5BB00ECD100 /* CustomCell.swift in Sources */,
 				700479E4205CCDFB00C092D3 /* ChatViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
